@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Issue Tracker</title>
+	<!-- Skip the download with the Bootstrap CDN to deliver cached version of Bootstrap’s compiled CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body onload="fetchissues()">
+	<div class="container">
+		<h1> JS IssueTracker <small>by Ayush Ranjan Lohani</small></h1>
+		<div class="jumbotron">
+			<h3>Add new issue!</h3>
+			<form id="issueInputForm">
+				<div class="form-group">
+					<label for="issueDescInput">Description</label>
+					<input type="text" class="form-control" id="issueDescInput" placeholder="Describe the issue....">
+				</div>
+
+				<div class="form-group">
+					<label for="issueSeverityInput">Severity</label>
+					<select id="issueSeverityInput">
+						<option value="low">Low</option>
+						<option value="medium">Medium</option>
+						<option value="high">High</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="issueAssignedToInput">Assigned to</label>
+					<input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter Responsible....">
+				</div>
+				<button type="submit" class="btn btn-primary">Add</button>
+			</form>
+			
+		</div>
+		<div class="col-lg-12">
+			<div id="issueslist">
+
+			</div>					
+		</div>
+		<div class="footer">
+			<p>&copy lohani2280</p>
+		</div>
+	</div>
+
+	<!-- chance.js library is used in this project to generate global unique identifiers for each of the issue entries we are creating in our appication -->
+	<script src="http://chancejs.com/chance.min.js"></script>
+	<!-- If you’re using our compiled JavaScript, don’t forget to include CDN versions of jQuery and Popper.js before it. -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+	<!-- Skip the download with the Bootstrap CDN to deliver cached version of Bootstrap’s compiled JS to your project. -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

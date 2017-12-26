@@ -1,6 +1,5 @@
 # Jsapp
-It's a Basic JavaScript Application. 
-It's a simple issue tracker where one can describe an issue regarding any software product 
+It's a very simple issue tracker where one can describe an issue regarding any software product 
 using the input form here.
 # Features
 1. One can open a new issue by filling the input form and clicking the `Add` Button.
